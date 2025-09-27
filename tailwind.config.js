@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        jobTracker: {
+          primary: "#5101ff",
+        },
+      },
+    },
   },
   plugins: [],
 };
