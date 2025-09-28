@@ -38,21 +38,19 @@ export const generateInputClasses = ({
 };
 
 const fullConfig = resolveConfig(tailwindConfig);
-const colors = fullConfig.theme.colors as Record<string, any>;
+const colors = fullConfig.theme.colors;
 
 /**
  * Gets a Tailwind color value from a key like "brand-light" or "gray-500"
-and returns Hex code (e.g. "#1e40af") or undefined
+ * and returns Hex code (e.g. "#1e40af") or undefined
  */
-
-export const getColorValue = (colorKey: string) => {
+export const getColorValue = (colorKey: string): string | undefined => {
   const keys = colorKey.split("-");
-  let current = colors;
+  let current: unknown = colors;
 
   for (const key of keys) {
-    console.log({ key, current, colors });
     if (current && typeof current === "object" && key in current) {
-      current = current[key] as Record<string, any>;
+      current = (current as Record<string, unknown>)[key];
     } else {
       return undefined;
     }
