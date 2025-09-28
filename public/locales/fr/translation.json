@@ -1,5 +1,16 @@
 {
+  "is_required": "{{field}} est requis",
+  "email_placeholder": "votreemail@exemple.com",
+  "continue": "ou continuer avec",
   "sign_in": {
-    "text": "Se connecter"
+    "text": "Se connecter",
+    "email": "Email",
+    "password": "Mot de passe",
+    "forgot_password": "Mot de passe oublié ?",
+    "remember_me": "Se souvenir de moi",
+    "new_user": "Vous n'avez pas de compte ?"
+  },
+  "sign_up": {
+    "text": "S'inscrire"
   }
 }
