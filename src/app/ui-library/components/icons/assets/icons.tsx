@@ -25,51 +25,101 @@ export const icons = {
       />
     </svg>
   ),
-  email: (
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+  eye: (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
         <path
-          d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21H16"
+          d="M12 16.01C14.2091 16.01 16 14.2191 16 12.01C16 9.80087 14.2091 8.01001 12 8.01001C9.79086 8.01001 8 9.80087 8 12.01C8 14.2191 9.79086 16.01 12 16.01Z"
           stroke="#currentColor"
-          strokeWidth="1.128"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{" "}
+        <path
+          d="M2 11.98C8.09 1.31996 15.91 1.32996 22 11.98"
+          stroke="#currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{" "}
+        <path
+          d="M22 12.01C15.91 22.67 8.09 22.66 2 12.01"
+          stroke="#currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
         ></path>{" "}
       </g>
     </svg>
   ),
-  padlock: (
+  "eye-off": (
     <svg
-      viewBox="0 0 48 48"
+      viewBox="0 0 24 24"
+      fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      stroke="#currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
     >
-      <path
-        strokeWidth="1.91px"
-        d="M24,25.28a3.26,3.26,0,0,0-1.64,6.07V36h3.32V31.35a3.28,3.28,0,0,0,1.61-2.8v0A3.27,3.27,0,0,0,24,25.28Z"
-      />
-      <rect
-        x="7.38"
-        y="17.77"
-        width="33.23"
-        height="25.73"
-        rx="4.32"
-        strokeWidth="1.91px"
-      />
-      <path
-        strokeWidth="1.91px"
-        d="M13.35,17.77V15.16a10.66,10.66,0,0,1,21.32,0v2.61"
-      />
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M14.83 9.17999C14.2706 8.61995 13.5576 8.23846 12.7813 8.08386C12.0049 7.92926 11.2002 8.00851 10.4689 8.31152C9.73758 8.61453 9.11264 9.12769 8.67316 9.78607C8.23367 10.4444 7.99938 11.2184 8 12.01C7.99916 13.0663 8.41619 14.08 9.16004 14.83"
+          stroke="#currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{" "}
+        <path
+          d="M12 16.01C13.0609 16.01 14.0783 15.5886 14.8284 14.8384C15.5786 14.0883 16 13.0709 16 12.01"
+          stroke="#currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{" "}
+        <path
+          d="M17.61 6.39004L6.38 17.62C4.6208 15.9966 3.14099 14.0944 2 11.99C6.71 3.76002 12.44 1.89004 17.61 6.39004Z"
+          stroke="#currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{" "}
+        <path
+          d="M20.9994 3L17.6094 6.39"
+          stroke="#currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{" "}
+        <path
+          d="M6.38 17.62L3 21"
+          stroke="#currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{" "}
+        <path
+          d="M19.5695 8.42999C20.4801 9.55186 21.2931 10.7496 21.9995 12.01C17.9995 19.01 13.2695 21.4 8.76953 19.23"
+          stroke="#currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{" "}
+      </g>
     </svg>
   ),
 };

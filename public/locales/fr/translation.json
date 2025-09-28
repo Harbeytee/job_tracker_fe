@@ -11,6 +11,8 @@
     "new_user": "Vous n'avez pas de compte ?"
   },
   "sign_up": {
-    "text": "S'inscrire"
+    "text": "S'inscrire",
+    "old_user": "Vous avez déjà un compte ?",
+    "name": "Nom"
   }
 }

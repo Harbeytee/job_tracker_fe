@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import GoogleAuth from "./components/google-auth";
+import GoogleAuth from "../google-auth";
 import Form from "./components/form";
 
 export default function SignIn() {
@@ -27,7 +27,7 @@ export default function SignIn() {
 
           <p className="text-center ">
             {t("sign_in.new_user")}{" "}
-            <Link className="text-primary font-bold ml-0.5" href={""}>
+            <Link className="text-primary font-bold ml-0.5" href={"/sign-up"}>
               {t("sign_up.text")}
             </Link>
           </p>
