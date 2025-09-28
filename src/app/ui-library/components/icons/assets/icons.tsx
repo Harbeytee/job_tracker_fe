@@ -73,7 +73,3 @@ export const icons = {
     </svg>
   ),
 };
-
-{
-  /* <svg viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style></defs><rect class="cls-1" x="2.45" y="11.05" width="19.09" height="11.45"></rect><path class="cls-1" d="M12,1.5h0a6.68,6.68,0,0,1,6.68,6.68V11a0,0,0,0,1,0,0H5.32a0,0,0,0,1,0,0V8.18A6.68,6.68,0,0,1,12,1.5Z"></path><circle class="cls-1" cx="12" cy="15.82" r="0.95"></circle><line class="cls-1" x1="12" y1="19.64" x2="12" y2="16.77"></line></g></svg> */
-}
