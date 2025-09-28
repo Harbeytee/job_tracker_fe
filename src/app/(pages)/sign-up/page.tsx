@@ -1,5 +1,1 @@
-import React from "react";
-
-export default function SignUp() {
-  return <div>sign up</div>;
-}
+export { default } from "@/app/components/sign-up/sign-up";

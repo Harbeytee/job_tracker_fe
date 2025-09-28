@@ -1,0 +1,85 @@
+import React, { Ref, useState } from "react";
+import { generateInputClasses } from "../../utils.ts/helper";
+
+export interface InputProps {
+  type?: string;
+  ref?: Ref<HTMLInputElement> | null;
+  name?: string;
+  disabled?: boolean;
+  className?: string;
+  placeholder?: string;
+  label?: string;
+  error?: string;
+  value: string;
+  defaultValue?: string;
+  required?: boolean;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onBlur?: () => void;
+  leadingContent?: React.ReactNode;
+  trailingContent?: React.ReactNode;
+  onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
+  noBorder?: boolean;
+}
+
+export default function InputField({
+  type = "text",
+  disabled = false,
+  ref,
+  className = "",
+  placeholder = "",
+  label,
+  error,
+  value,
+  onChange,
+  leadingContent,
+  trailingContent,
+  onBlur,
+  required,
+  onKeyDown,
+  noBorder,
+}: InputProps) {
+  const [isFocused, setIsFocused] = useState(false);
+
+  const classes = generateInputClasses({
+    value,
+    error: error || "",
+    focused: isFocused,
+    disabled,
+    noBorder,
+  });
+  return (
+    <div className={`w-full ${className}`}>
+      {label && (
+        <label className="text-base">
+          {label}{" "}
+          {required && (
+            <span className="text-red-500 text-lg inline-block">*</span>
+          )}
+        </label>
+      )}
+      <div
+        className={`
+        relative flex items-center mt-1 mb-3  p-2.5 rounded-lg ${classes}
+       `}
+      >
+        {leadingContent && <span className="mr-2">{leadingContent}</span>}
+        <input
+          ref={ref}
+          type={type}
+          disabled={disabled}
+          placeholder={placeholder}
+          value={value}
+          onChange={onChange}
+          onFocus={() => setIsFocused(true)}
+          onBlur={() => {
+            setIsFocused(false);
+            onBlur?.();
+          }}
+          onKeyDown={onKeyDown}
+          className="w-full h-full focus:outline-none bg-neutral-300 dark:bg-black-950"
+        />
+        {trailingContent && <span className="ml-2">{trailingContent}</span>}
+      </div>
+    </div>
+  );
+}
