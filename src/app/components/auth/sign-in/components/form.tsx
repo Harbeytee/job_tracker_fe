@@ -1,5 +1,4 @@
 import { PrimaryButton } from "@/app/ui-library/components/buttons/primary-button";
-import { Icon } from "@/app/ui-library/components/icons/icon";
 import InputField from "@/app/ui-library/components/inputs/input-field";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
@@ -15,7 +14,6 @@ export default function Form() {
         placeholder={t("email_placeholder")}
         onChange={() => {}}
         noBorder
-        leadingContent={<Icon name="email" color="gray-500" />}
         required
       />
       <InputField
@@ -24,7 +22,6 @@ export default function Form() {
         placeholder={"******"}
         onChange={() => {}}
         noBorder
-        leadingContent={<Icon name="padlock" color="gray-500" />}
         required
       />
 

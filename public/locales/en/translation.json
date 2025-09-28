@@ -1,7 +1,7 @@
 {
   "is_required": "{{field}} is required",
   "continue": "or continue with",
-  "email_placeholder": "youremail@example.com",
+  "email_placeholder": "JohnDoe@example.com",
   "sign_in": {
     "text": "Sign in",
     "email": "Email",
@@ -11,6 +11,8 @@
     "new_user": "Don't have an account?"
   },
   "sign_up": {
-    "text": "Sign up"
+    "text": "Sign up",
+    "old_user": "Already have an account?",
+    "name": "Name"
   }
 }
