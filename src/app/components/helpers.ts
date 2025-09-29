@@ -7,7 +7,7 @@ export const getNavLinks = (): NavLink[] => [
   { name: i18n.t("navbar.saved_jobs"), icon: "bookmark", route: "" },
   { name: i18n.t("navbar.planner"), icon: "calendar", route: "" },
   {
-    name: i18n.t("navbar.application"),
+    name: i18n.t("navbar.applications"),
     icon: "applications",
     route: "/applications",
   },
