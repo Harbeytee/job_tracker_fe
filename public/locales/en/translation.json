@@ -14,5 +14,15 @@
     "text": "Sign up",
     "old_user": "Already have an account?",
     "name": "Name"
+  },
+  "navbar": {
+    "dashboard": "Dashboard",
+    "job_search": "Job search",
+    "saved_jobs": "Saved jobs",
+    "planner": "Planner",
+    "application": "Applications",
+    "resume": "Résumé",
+    "interview_prep": "Interview prep",
+    "job_boards": "Job boards"
   }
 }

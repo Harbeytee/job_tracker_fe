@@ -6,7 +6,7 @@ export default function Form() {
   const { t } = useTranslation();
 
   return (
-    <form>
+    <form className="mt-8">
       <InputField
         value=""
         label={t("sign_up.name")}

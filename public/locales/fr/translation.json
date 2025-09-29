@@ -14,5 +14,15 @@
     "text": "S'inscrire",
     "old_user": "Vous avez déjà un compte ?",
     "name": "Nom"
+  },
+  "navbar": {
+    "dashboard": "Tableau de bord",
+    "job_search": "Recherche d'emploi",
+    "saved_jobs": "Emplois sauvegardés",
+    "planner": "Planificateur",
+    "application": "Candidatures",
+    "resume": "CV",
+    "interview_prep": "Préparation à l'entretien",
+    "job_boards": "Sites d'emploi"
   }
 }

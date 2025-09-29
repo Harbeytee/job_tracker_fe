@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import GoogleAuth from "../google-auth";
 import Form from "./components/form";
+import Logo from "../../logo";
 
 export default function SignIn() {
   const lineClass = "bg-gray-300 block w-full h-[1px] rounded-lg";
@@ -12,9 +13,7 @@ export default function SignIn() {
     <div className="flex flex-col items-center justify-center h-screen dark:text-gray-200 py-6 px-1.5">
       <div className="md:bg-indigo-950  w-full max-w-[600px] md:p-4 rounded-3xl">
         <div className="bg-white dark:bg-black-400 rounded-xl p-4 md:p-7 pb-12">
-          <h2 className="text-center text-4xl text-primary font-bold mb-8">
-            JobBuddy
-          </h2>
+          <Logo />
           <Form />
 
           <div className="flex items-center mt-11">
