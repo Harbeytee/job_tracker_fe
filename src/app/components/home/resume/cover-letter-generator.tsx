@@ -6,7 +6,7 @@ export default function CoverLetterGenerator() {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <>
       <h2 className="text-primary text-xl text-center md:text-left md:text-3xl font-bold">
         {t("resume.cover_letter_generator.header")}
       </h2>
@@ -14,6 +14,6 @@ export default function CoverLetterGenerator() {
         {t("resume.cover_letter_generator.description")}
       </p>
       <LetterGenerator />
-    </div>
+    </>
   );
 }

@@ -27,9 +27,4 @@ export const initI18n = async () => {
     });
 };
 
-// Initialize only on client side
-// if (typeof window !== "undefined") {
-//   initI18n();
-// }
-
 export default i18n;
