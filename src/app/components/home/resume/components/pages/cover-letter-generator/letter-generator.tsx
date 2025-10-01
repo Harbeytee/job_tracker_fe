@@ -6,7 +6,7 @@ export default function LetterGenerator() {
   const [coverLetter, setCoverLetter] = useState("");
 
   return (
-    <div className="grid lg:grid-cols-2 gap-6 ">
+    <div className="grid lg:grid-cols-2 gap-6 h-full max-h-[73vh]">
       <ChooseResume setCoverLetter={setCoverLetter} />
       <CoverLetterPreview
         coverLetter={coverLetter}
