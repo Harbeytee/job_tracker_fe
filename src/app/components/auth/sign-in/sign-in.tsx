@@ -4,9 +4,9 @@ import { useTranslation } from "react-i18next";
 import GoogleAuth from "../google-auth";
 import Form from "./components/form";
 import Logo from "../../logo";
+import Divider from "@/app/ui-library/components/divider";
 
 export default function SignIn() {
-  const lineClass = "bg-gray-300 block w-full h-[1px] rounded-lg";
   const { t } = useTranslation();
 
   return (
@@ -15,13 +15,7 @@ export default function SignIn() {
         <div className="bg-white dark:bg-black-400 rounded-xl p-4 md:p-7 pb-12">
           <Logo />
           <Form />
-
-          <div className="flex items-center mt-11">
-            <div className={lineClass}></div>
-            <p className="whitespace-nowrap mx-4"> {t("continue")}</p>
-
-            <div className={lineClass}></div>
-          </div>
+          <Divider text={t("continue")} className="mt-11" />
           <GoogleAuth />
 
           <p className="text-center ">

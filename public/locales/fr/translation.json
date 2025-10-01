@@ -2,6 +2,9 @@
   "is_required": "{{field}} est requis",
   "email_placeholder": "votreemail@exemple.com",
   "continue": "ou continuer avec",
+  "click_to_upload": "<1>Cliquez pour téléverser</1> ou faites glisser et déposez",
+  "file_type": "PDF, DOC ou DOCX (MAX. 10 Mo)",
+  "or": "ou",
   "sign_in": {
     "text": "Se connecter",
     "email": "Email",
@@ -28,6 +31,7 @@
   "resume": {
     "header": "Votre boîte à outils pour le CV",
     "description": "Tout ce dont vous avez besoin pour créer, optimiser et perfectionner votre CV et vos lettres de motivation, le tout au même endroit. Choisissez un outil ci-dessous pour commencer votre parcours de candidature.",
+    "upload_resume": "Téléverser un CV",
     "cards": {
       "cover_letter": "Générer une lettre de motivation",
       "cover_letter_desc": "Utilisez votre CV pour créer instantanément une lettre de motivation personnalisée pour n'importe quel poste.",
@@ -38,6 +42,16 @@
       "ats_scanner": "Analyser le CV pour l'optimisation ATS",
       "ats_scanner_desc": "Comprueba qué tan bien se desempeña tu currículum con los Sistemas de Seguimiento de Candidatos (ATS).",
       "ats_scanner_button": "Analyser mon CV"
+    },
+    "cover_letter_generator": {
+      "header": "Créez votre lettre de motivation facilement",
+      "description": "Téléversez votre CV ou sélectionnez-en un existant pour générer une lettre de motivation personnalisée que vous pouvez consulter, modifier et exporter en quelques clics.",
+      "select_resume": "Sélectionner un CV existant",
+      "last_updated": "dernière mise à jour le {{date}}",
+      "generate_cover_letter": "Générer la lettre de motivation",
+      "placeholder": "Votre lettre de motivation générée apparaîtra ici. Vous pouvez la modifier, la copier ou l'exporter selon vos besoins.",
+      "regenerate": "Régénérer",
+      "export": "Exporter"
     }
   }
 }

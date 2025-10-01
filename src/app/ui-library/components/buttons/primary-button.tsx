@@ -24,7 +24,7 @@ export const PrimaryButton = ({
   ...props
 }: ButtonProps) => (
   <button
-    className={`px-4 py-2 text-base whitespace-nowrap flex items-center justify-center !gap-2 font-semibold text-white bg-yala-primary rounded-lg disabled:opacity-60 hover:opacity-90 ${className} bg-primary`}
+    className={`px-4 py-2 text-base whitespace-nowrap flex items-center justify-center !gap-2 font-semibold text-white rounded-lg disabled:bg-gray-300 disabled:cursor-not-allowed hover:opacity-90 ${className} bg-primary`}
     onClick={() => (href ? window.open(href, "_blank") : onClick?.())}
     {...props}
   >
