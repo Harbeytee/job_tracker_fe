@@ -50,7 +50,8 @@
       "last_updated": "dernière mise à jour le {{date}}",
       "generate_cover_letter": "Générer la lettre de motivation",
       "placeholder": "Votre lettre de motivation générée apparaîtra ici. Vous pouvez la modifier, la copier ou l'exporter selon vos besoins.",
-      "regenerate": "Régénérer"
+      "regenerate": "Régénérer",
+      "export": "Exporter"
     }
   }
 }

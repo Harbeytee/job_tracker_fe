@@ -50,7 +50,8 @@
       "last_updated": "last updated {{date}}",
       "generate_cover_letter": "Generate cover letter",
       "placeholder": "Your generated cover letter will appear here. You can edit, copy, or export it as needed.",
-      "regenerate": "Regenerate"
+      "regenerate": "Regenerate",
+      "export": "Export"
     }
   }
 }

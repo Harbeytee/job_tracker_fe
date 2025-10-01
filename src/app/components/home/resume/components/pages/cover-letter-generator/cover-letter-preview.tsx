@@ -27,7 +27,9 @@ export default function CoverLetterPreview({
       {coverLetter && (
         <div className="flex justify-end mt-1.5">
           <CopyToClipboard text={coverLetter} />
-          <PrimaryButton leadingIcon="download">Export</PrimaryButton>
+          <PrimaryButton leadingIcon="download">
+            {t("resume.cover_letter_generator.export")}
+          </PrimaryButton>
         </div>
       )}
     </div>
