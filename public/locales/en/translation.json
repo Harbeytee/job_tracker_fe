@@ -24,5 +24,20 @@
     "resume": "Résumé",
     "interview_prep": "Interview prep",
     "job_boards": "Job boards"
+  },
+  "resume": {
+    "header": "Your resume toolkit",
+    "description": "Everything you need to create, optimize, and perfect your resume and cover letters all in one place. Choose a tool below to get started on your job application journey.",
+    "cards": {
+      "cover_letter": "Generate a Cover Letter",
+      "cover_letter_desc": "Use your resume to instantly craft a tailored cover letter for any job.",
+      "cover_letter_button": "Start Writing",
+      "resume_builder": "Build a Resume from Scratch",
+      "resume_builder_desc": "Create a professional resume based on your skills and experience",
+      "resume_builder_button": "Build Resume",
+      "ats_scanner": "Scan Resume for ATS Optimization",
+      "ats_scanner_desc": "Check how well your resume performs with Applicant Tracking Systems (ATS).",
+      "ats_scanner_button": "Scan My Resume"
+    }
   }
 }
