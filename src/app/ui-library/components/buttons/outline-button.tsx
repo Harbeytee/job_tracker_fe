@@ -22,7 +22,7 @@ export const OutlineButton = ({
   ...props
 }: ButtonProps) => (
   <button
-    className={`px-4 py-2 text-base flex items-center justify-center !gap-2 text-[13px]/[16.9px] font-semibold text-yala-black bg-transparent border border-grey-300 rounded-lg ${className}`}
+    className={`px-4 py-2 text-base flex items-center justify-center !gap-2 text-[13px]/[16.9px] font-semibold bg-transparent border border-grey-300 rounded-lg ${className}`}
     onClick={onClick}
     {...props}
   >

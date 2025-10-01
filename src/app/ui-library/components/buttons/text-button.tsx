@@ -27,7 +27,7 @@ export const TextButton = ({
 }: ButtonProps) => (
   <button
     type="button"
-    className={`!p-0 text-[13px]/[15.6px] whitespace-nowrap flex items-center justify-center gap-1 font-semibold text-yala-primary bg-transparent border-none ${className}`}
+    className={`!p-0 text-[13px]/[15.6px] whitespace-nowrap flex items-center justify-center gap-1 font-semibold bg-transparent border-none ${className}`}
     onClick={onClick}
     {...props}
   >

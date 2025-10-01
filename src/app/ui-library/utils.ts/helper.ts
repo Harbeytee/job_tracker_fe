@@ -34,7 +34,7 @@ export const generateInputClasses = ({
         ? "shadow-[0px_0px_0px_2.5px_#9EE35B4D] border-yala-primary outline-none"
         : "shadow-[0px_1px_2px_0px_#0A0D120D]"
     }
-    focus:shadow-[0px_0px_0px_2.5px_#9EE35B4D] focus:border-yala-primary focus:outline-none`;
+    focus:shadow-[0px_0px_0px_2.5px_#9EE35B4D]  focus:outline-none`;
 };
 
 const fullConfig = resolveConfig(tailwindConfig);

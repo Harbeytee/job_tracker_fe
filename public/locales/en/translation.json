@@ -2,6 +2,9 @@
   "is_required": "{{field}} is required",
   "continue": "or continue with",
   "email_placeholder": "JohnDoe@example.com",
+  "click_to_upload": "<1>Click to upload</1> or drag and drop",
+  "file_type": "PDF, DOC, or DOCX (MAX. 10MB)",
+  "or": "or",
   "sign_in": {
     "text": "Sign in",
     "email": "Email",
@@ -28,6 +31,7 @@
   "resume": {
     "header": "Your resume toolkit",
     "description": "Everything you need to create, optimize, and perfect your resume and cover letters all in one place. Choose a tool below to get started on your job application journey.",
+    "upload_resume": "Upload resume",
     "cards": {
       "cover_letter": "Generate a Cover Letter",
       "cover_letter_desc": "Use your resume to instantly craft a tailored cover letter for any job.",
@@ -38,6 +42,15 @@
       "ats_scanner": "Scan Resume for ATS Optimization",
       "ats_scanner_desc": "Check how well your resume performs with Applicant Tracking Systems (ATS).",
       "ats_scanner_button": "Scan My Resume"
+    },
+    "cover_letter_generator": {
+      "header": "Build Your Cover Letter with Ease",
+      "description": "Upload your resume or select an existing one to generate a personalized cover letter you can review, customize, and export in just a few clicks.",
+      "select_resume": "Select from Existing Resumes",
+      "last_updated": "last updated {{date}}",
+      "generate_cover_letter": "Generate cover letter",
+      "placeholder": "Your generated cover letter will appear here. You can edit, copy, or export it as needed.",
+      "regenerate": "Regenerate"
     }
   }
 }

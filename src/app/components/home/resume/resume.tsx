@@ -2,11 +2,11 @@
 import { useTranslation } from "react-i18next";
 import Cards from "./components/cards";
 
-export default function resume() {
+export default function Resume() {
   const { t } = useTranslation();
 
   return (
-    <div className="p-14">
+    <div>
       <div>
         <h2 className="text-primary text-3xl font-bold">
           {t("resume.header")}
