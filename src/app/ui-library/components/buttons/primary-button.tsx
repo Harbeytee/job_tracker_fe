@@ -1,6 +1,7 @@
 import React, { ComponentProps } from "react";
 import { IconNames } from "../../types/types";
 import { Icon } from "../icons/icon";
+import Loader from "../Loader";
 
 interface ButtonProps extends ComponentProps<"button"> {
   children: React.ReactNode;
@@ -28,7 +29,7 @@ export const PrimaryButton = ({
     {...props}
   >
     {isLoading ? (
-      "Loading..."
+      <Loader />
     ) : (
       <>
         {leadingIcon && <Icon name={leadingIcon} size={16} />}

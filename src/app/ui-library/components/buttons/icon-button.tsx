@@ -1,6 +1,7 @@
 import { ButtonHTMLAttributes } from "react";
 import { Icon } from "../icons/icon";
 import { IconNames } from "../../types/types";
+import Loader from "../Loader";
 
 interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon: IconNames;
@@ -25,11 +26,7 @@ export function IconButton({
       disabled={isLoading}
       {...props}
     >
-      {isLoading ? (
-        "Loading..."
-      ) : (
-        <Icon name={icon} size={size} color={color} />
-      )}
+      {isLoading ? <Loader /> : <Icon name={icon} size={size} color={color} />}
     </button>
   );
 }
