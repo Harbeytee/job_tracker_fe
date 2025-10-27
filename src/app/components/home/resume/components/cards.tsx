@@ -8,7 +8,7 @@ export default function Cards() {
   const router = useRouter();
 
   return (
-    <div className="flex gap-4 bg-neutral-50 p-5 w-full rounded-lg mt-6">
+    <div className="flex gap-4 bg-neutral-50 dark:bg-gray-900 p-5 w-full rounded-lg mt-6">
       {cards.map((card) => (
         <div
           key={card.title}

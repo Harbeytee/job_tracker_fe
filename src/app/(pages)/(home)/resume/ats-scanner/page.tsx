@@ -1,1 +1,1 @@
-export { default } from "@/app/components/home/resume/ats-scanner";
+export { default } from "@/app/components/home/resume/components/pages/ats-scanner/ats-scanner";

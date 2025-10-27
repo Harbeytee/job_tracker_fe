@@ -1,6 +1,6 @@
 "use client";
 import { useTranslation } from "react-i18next";
-import LetterGenerator from "./components/pages/cover-letter-generator/letter-generator";
+import LetterGenerator from "./letter-generator";
 
 export default function CoverLetterGenerator() {
   const { t } = useTranslation();

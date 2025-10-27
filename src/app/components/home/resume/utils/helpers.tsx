@@ -1,5 +1,7 @@
 import i18n from "@/app/internationalization/config";
 import { ResumeCard } from "../types/interfaces";
+import { ResumeStatus } from "../types/enums";
+import { Icon } from "@/app/ui-library/components/icons/icon";
 
 export const getResumeCards = (): ResumeCard[] => [
   {
@@ -30,3 +32,56 @@ export const getResumeCards = (): ResumeCard[] => [
     iconBg: "bg-green-600/10",
   },
 ];
+
+export const getStatusBg = (status: ResumeStatus): string => {
+  switch (status) {
+    case ResumeStatus.Good:
+      return "bg-green-50 border-green-200";
+    case ResumeStatus.Warning:
+      return "bg-yellow-50 border-yellow-200";
+    case ResumeStatus.Poor:
+      return "bg-red-50 border-red-200";
+    default:
+      return "bg-gray-50 border-gray-200";
+  }
+};
+
+export const getStatusColor = (status: ResumeStatus) => {
+  switch (status) {
+    case ResumeStatus.Good:
+      return {
+        text: "text-green-600",
+        color: "green-600",
+      };
+    case ResumeStatus.Warning:
+      return {
+        text: "text-yellow-600",
+        color: "yellow-600",
+      };
+    case ResumeStatus.Poor:
+      return {
+        text: "text-red-600",
+        color: "red-600",
+      };
+    default:
+      return {
+        text: "text-gray-600",
+        color: "gray-600",
+      };
+  }
+};
+
+export const getStatusIcon = (
+  status: "good" | "warning" | "poor"
+): React.ReactNode | null => {
+  switch (status) {
+    case "good":
+      return <Icon name="check" color="green-600" />;
+    case "warning":
+      return <Icon name="alert-circle" color="yellow-600" />;
+    case "poor":
+      return <Icon name="close" color="red-600" />;
+    default:
+      return null;
+  }
+};

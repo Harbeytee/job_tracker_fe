@@ -8,13 +8,13 @@ export default function ExistingResumes({
   selectedResume,
 }: {
   setSelectedResume: (val: string) => void;
-  selectedResume: string;
+  selectedResume: string | null;
 }) {
   const { t } = useTranslation();
 
   return (
     <div className="flex-1 flex flex-col min-h-0">
-      <Label text={t("resume.cover_letter_generator.generate_cover_letter")} />
+      <Label text={t("resume.cover_letter_generator.select_resume")} />
 
       <div
         className="flex-1 overflow-y-auto space-y-2 pr-2 min-h-0"
@@ -24,10 +24,10 @@ export default function ExistingResumes({
           <div
             key={resume.id}
             onClick={() => {
-              setSelectedResume(resume.id);
+              setSelectedResume(resume.name);
             }}
             className={`p-4 border-2 rounded-lg cursor-pointer transition-all ${
-              selectedResume === resume.id
+              selectedResume === resume.name
                 ? "border-primary/50 bg-primary/5"
                 : "border-gray-200 hover:border-gray-300"
             }`}
