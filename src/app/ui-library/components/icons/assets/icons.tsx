@@ -26,11 +26,7 @@ export const icons = {
     </svg>
   ),
   eye: (
-    <svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
@@ -522,7 +518,11 @@ export const icons = {
     </svg>
   ),
   scan: (
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
@@ -595,6 +595,70 @@ export const icons = {
             strokeLinejoin="round"
           ></path>{" "}
         </g>{" "}
+      </g>
+    </svg>
+  ),
+  "chevron-left": (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M15 6L9.21261 11.7874V11.7874C9.09519 11.9048 9.09519 12.0952 9.21261 12.2126V12.2126L15 18"
+          stroke="#currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        ></path>{" "}
+      </g>
+    </svg>
+  ),
+  "chevron-up": (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <g id="Arrow / Chevron_Up">
+          {" "}
+          <path
+            id="Vector"
+            d="M5 16L12 9L19 16"
+            stroke="#currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          ></path>{" "}
+        </g>{" "}
+      </g>
+    </svg>
+  ),
+  "chevron-down": (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M6 9L11.7874 14.7874V14.7874C11.9048 14.9048 12.0952 14.9048 12.2126 14.7874V14.7874L18 9"
+          stroke="#currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        ></path>{" "}
       </g>
     </svg>
   ),
@@ -721,6 +785,92 @@ export const icons = {
           ></path>{" "}
         </g>{" "}
       </g>
+    </svg>
+  ),
+  "alert-circle": (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          transform="rotate(-180 12 12)"
+          stroke="#currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        ></circle>{" "}
+        <line
+          x1="12"
+          y1="7"
+          x2="12"
+          y2="13"
+          stroke="#currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        ></line>{" "}
+        <path
+          d="M12 17L12 17.01"
+          stroke="#currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        ></path>{" "}
+      </g>
+    </svg>
+  ),
+  target: (
+    <svg
+      height="200px"
+      width="200px"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="#currentColor"
+    >
+      <path d="M256.004,0C114.842,0,0,114.842,0,256.004C0,397.158,114.842,512,256.004,512 C397.158,512,512,397.158,512,256.004C512,114.842,397.158,0,256.004,0z M256.004,475.427c-120.996,0-219.43-98.435-219.43-219.423 c0-120.996,98.435-219.438,219.43-219.438c120.989,0,219.424,98.442,219.424,219.438 C475.427,376.992,376.992,475.427,256.004,475.427z" />
+      <path d="M256.004,73.146c-100.83,0-182.865,82.02-182.865,182.858c0,100.822,82.035,182.85,182.865,182.85 c100.822,0,182.858-82.028,182.858-182.85C438.862,155.166,356.826,73.146,256.004,73.146z M256.004,402.281 c-80.664,0-146.284-65.62-146.284-146.277c0-80.664,65.62-146.292,146.284-146.292c80.656,0,146.278,65.628,146.278,146.292 C402.281,336.661,336.66,402.281,256.004,402.281z" />
+      <path d="M256.004,146.284c-60.498,0-109.719,49.214-109.719,109.72c0,60.49,49.221,109.704,109.719,109.704 c60.491,0,109.712-49.214,109.712-109.704C365.716,195.498,316.494,146.284,256.004,146.284z M256.004,329.142 c-40.332,0-73.146-32.806-73.146-73.138c0-40.332,32.814-73.146,73.146-73.146c40.332,0,73.138,32.814,73.138,73.146 C329.142,296.336,296.336,329.142,256.004,329.142z" />
+      <path d="M256.004,219.43c-20.202,0-36.581,16.37-36.581,36.574c0,20.195,16.378,36.558,36.581,36.558 c20.196,0,36.573-16.363,36.573-36.558C292.576,235.801,276.199,219.43,256.004,219.43z" />
+    </svg>
+  ),
+  "trending-up": (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M21 7L13 15L9 11L3 17M21 7H15M21 7V13"
+          stroke="#currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        ></path>{" "}
+      </g>
+    </svg>
+  ),
+  award: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 367.424 367.424"
+      fill="currentColor"
+      width="24"
+      height="24"
+    >
+      <path d="M331.832,324.933c-14.176-33.603-62.084-139.134-62.084-139.134c16.688-19.688,26.781-45.129,26.781-72.893 C296.529,50.65,245.881,0,183.625,0C121.37,0,70.719,50.65,70.719,112.906c0,27.764,10.096,53.205,26.781,72.893L35.297,325.877 c-1.396,3.145-0.723,6.828,1.699,9.273c2.422,2.442,6.084,3.161,9.258,1.801l41.352-17.828l14.506,42.633 c1.109,3.26,4.104,5.506,7.541,5.66c0.127,0.004,0.254,0.008,0.377,0.008c3.295,0,6.297-1.938,7.645-4.969l60.736-136.779 c1.73,0.082,3.467,0.135,5.215,0.135s3.482-0.053,5.215-0.135l60.736,136.779c1.348,3.028,4.348,4.969,7.645,4.969 c0.123,0,0.248-0.004,0.375-0.008c3.439-0.154,6.432-2.4,7.543-5.66l14.506-42.633l41.064,17.545 c1.07,0.459,2.193,0.684,3.309,0.684c0.033,0,0.074,0,0.086,0c4.623,0,8.393-3.353,8.727-8.051 C332.908,328.216,332.666,326.907,331.832,324.933z M111.063,336.131l-10.537-30.967c-0.75-2.209-2.393-4.002-4.523-4.949 c-1.078-0.477-2.238-0.719-3.395-0.719c-1.127,0-2.254,0.229-3.312,0.682l-30.035,12.951l50.891-114.602 c14.322,12.305,31.727,21.104,50.908,25.018L111.063,336.131z M87.445,112.906c0-53.035,43.145-96.18,96.18-96.18 c53.033,0,96.177,43.145,96.177,96.18c0,53.033-43.145,96.178-96.177,96.178C130.59,209.084,87.445,165.94,87.445,112.906z M277.953,300.178c-2.141-0.914-4.574-0.901-6.705,0.037c-2.133,0.947-3.773,2.74-4.525,4.949l-10.535,30.967l-49.996-112.586 c19.18-3.912,36.586-12.713,50.906-25.018l50.891,114.602L277.953,300.178z" />
+      <path d="M183.625,37.635c-41.502,0-75.271,33.77-75.271,75.271s33.77,75.27,75.271,75.27c41.501,0,75.269-33.768,75.269-75.27 S225.127,37.635,183.625,37.635z M183.625,171.449c-32.281,0-58.545-26.262-58.545-58.543c0-32.281,26.264-58.543,58.545-58.543 c32.281,0,58.542,26.262,58.542,58.543C242.168,145.187,215.906,171.449,183.625,171.449z" />
     </svg>
   ),
 };
