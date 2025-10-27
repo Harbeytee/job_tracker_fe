@@ -32,6 +32,7 @@
     "header": "Votre boîte à outils pour le CV",
     "description": "Tout ce dont vous avez besoin pour créer, optimiser et perfectionner votre CV et vos lettres de motivation, le tout au même endroit. Choisissez un outil ci-dessous pour commencer votre parcours de candidature.",
     "upload_resume": "Téléverser un CV",
+    "select_resume": "Sélectionner un CV existant",
     "cards": {
       "cover_letter": "Générer une lettre de motivation",
       "cover_letter_desc": "Utilisez votre CV pour créer instantanément une lettre de motivation personnalisée pour n'importe quel poste.",
@@ -46,7 +47,6 @@
     "cover_letter_generator": {
       "header": "Créez votre lettre de motivation facilement",
       "description": "Téléversez votre CV ou sélectionnez-en un existant pour générer une lettre de motivation personnalisée que vous pouvez consulter, modifier et exporter en quelques clics.",
-      "select_resume": "Sélectionner un CV existant",
       "last_updated": "dernière mise à jour le {{date}}",
       "generate_cover_letter": "Générer la lettre de motivation",
       "placeholder": "Votre lettre de motivation générée apparaîtra ici. Vous pouvez la modifier, la copier ou l'exporter selon vos besoins.",
@@ -61,6 +61,8 @@
       "scan_another_resume": "Analyser un autre CV",
       "overall_score": "Score global ATS",
       "recruiter_note": "Votre CV indique aux recruteurs que vous correspondez à {{score}} % à ce poste",
+      "job_desc": "Description du poste",
+      "job_desc_info": "Ajouter une description de poste permettra l'analyse du score de correspondance",
       "cards": {
         "job_match_score": "Score de correspondance avec le poste",
         "job_match_score_desc": "Mesure dans quelle mesure votre CV correspond à la description du poste — en se basant sur les intitulés de poste, les compétences requises et les mots-clés pertinents.",

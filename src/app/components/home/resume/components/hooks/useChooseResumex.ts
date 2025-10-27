@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Resume, ScanResults } from "../../types/interfaces";
 
 export default function useChooseResumex(
   handleSubmit: (val: { jobDescription?: string; file: string | null }) => void

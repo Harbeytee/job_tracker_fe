@@ -5,6 +5,7 @@ export default function useGenerate() {
   const [isGenerating, setIsGenerating] = useState(false);
 
   const handleGenerate = (file: string) => {
+    console.log(file);
     setIsGenerating(true);
     // Simulate generation
     setTimeout(() => {

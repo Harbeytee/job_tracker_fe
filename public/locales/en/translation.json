@@ -32,6 +32,7 @@
     "header": "Your resume toolkit",
     "description": "Everything you need to create, optimize, and perfect your resume and cover letters all in one place. Choose a tool below to get started on your job application journey.",
     "upload_resume": "Upload resume",
+    "select_resume": "Select from Existing Resumes",
     "cards": {
       "cover_letter": "Generate a Cover Letter",
       "cover_letter_desc": "Use your resume to instantly craft a tailored cover letter for any job.",
@@ -46,7 +47,7 @@
     "cover_letter_generator": {
       "header": "Build Your Cover Letter with Ease",
       "description": "Upload your resume or select an existing one to generate a personalized cover letter you can review, customize, and export in just a few clicks.",
-      "select_resume": "Select from Existing Resumes",
+
       "last_updated": "last updated {{date}}",
       "generate_cover_letter": "Generate cover letter",
       "placeholder": "Your generated cover letter will appear here. You can edit, copy, or export it as needed.",
@@ -61,6 +62,8 @@
       "scan_another_resume": "Scan another resume",
       "overall_score": "Overall ATS score",
       "recruiter_note": "Your resume tells recruiters you're a {{score}}% match for this job",
+      "job_desc": "Job Description",
+      "job_desc_info": " Adding a job description will enable Job Match Score analysis",
       "cards": {
         "job_match_score": "Job match score",
         "job_match_score_desc": "Measures how closely your resume aligns with the job description — based on role titles, required skills, and relevant keywords.",

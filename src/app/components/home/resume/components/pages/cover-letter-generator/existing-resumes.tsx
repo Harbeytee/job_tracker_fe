@@ -14,7 +14,7 @@ export default function ExistingResumes({
 
   return (
     <div className="flex-1 flex flex-col min-h-0">
-      <Label text={t("resume.cover_letter_generator.select_resume")} />
+      <Label text={t("resume.select_resume")} />
 
       <div
         className="flex-1 overflow-y-auto space-y-2 pr-2 min-h-0"

@@ -14,7 +14,9 @@ export default function SelectResume() {
       </p>
       <ChooseResume
         className="lg:max-w-[50%] mx-auto mt-8"
-        handleSubmit={(file: string) => {}}
+        handleSubmit={(file: string) => {
+          console.log(file);
+        }}
         buttonText={t("resume.ats_scanner.scan_resume")}
         isLoading={false}
       />

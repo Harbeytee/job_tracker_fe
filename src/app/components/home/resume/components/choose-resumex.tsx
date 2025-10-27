@@ -1,9 +1,9 @@
 import { PrimaryButton } from "@/app/ui-library/components/buttons/primary-button";
-import { Icon } from "@/app/ui-library/components/icons/icon";
 import useChooseResumex from "./hooks/useChooseResumex";
 import FileUpload from "@/app/ui-library/components/file-upload";
 import ExistingResumes from "./pages/cover-letter-generator/existing-resumes";
 import { TextButton } from "@/app/ui-library/components/buttons/text-button";
+import { useTranslation } from "react-i18next";
 
 export default function ChooseResume({
   loading,
@@ -12,6 +12,7 @@ export default function ChooseResume({
   loading: boolean;
   handleSubmit: (val: { jobDescription?: string; file: string | null }) => void;
 }) {
+  const { t } = useTranslation();
   const {
     setSelectedFile,
     onSubmit,
@@ -40,7 +41,7 @@ export default function ChooseResume({
             }}
             leadingIcon="upload"
           >
-            Upload New Resume
+            {t("resume.upload_resume")}
           </PrimaryButton>
           <PrimaryButton
             className={`flex-1 py-3 px-4 rounded-lg font-semibold transition-colors ${
@@ -54,7 +55,7 @@ export default function ChooseResume({
             }}
             leadingIcon="document"
           >
-            Select Existing Resume
+            {t("resume.select_resume")}
           </PrimaryButton>
         </div>
 
@@ -83,7 +84,7 @@ export default function ChooseResume({
           {showJobDescInput && (
             <div className="space-y-2">
               <label className="block text-sm font-medium text-gray-700">
-                Job Description
+                {t("resume.ats_scanner.job_desc_info")}
               </label>
               <textarea
                 value={jobDescription}
@@ -92,7 +93,7 @@ export default function ChooseResume({
                 className="w-full h-40 p-3 border-2 border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm resize-none"
               />
               <p className="text-xs text-gray-500">
-                Adding a job description will enable Job Match Score analysis
+                {t("resume.ats_scanner.job_desc_info")}
               </p>
             </div>
           )}
