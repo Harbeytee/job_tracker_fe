@@ -8,13 +8,11 @@ export default function Resume() {
 
   return (
     <div>
-      <div>
-        <PageHeader
-          title={t("resume.header")}
-          description={t("resume.description")}
-        />
-        <Cards />
-      </div>
+      <PageHeader
+        title={t("resume.header")}
+        description={t("resume.description")}
+      />
+      <Cards />
     </div>
   );
 }
