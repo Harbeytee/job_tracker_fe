@@ -5,6 +5,7 @@
   "click_to_upload": "<1>Cliquez pour téléverser</1> ou faites glisser et déposez",
   "file_type": "PDF, DOC ou DOCX (MAX. 10 Mo)",
   "or": "ou",
+  "cancel": "Annuler",
   "sign_in": {
     "text": "Se connecter",
     "email": "Email",
@@ -98,6 +99,37 @@
       "recognized": "Sections reconnues",
       "not_recognized": "Non reconnues",
       "parsing_issues": "Problèmes d'analyse"
+    }
+  },
+  "applications": {
+    "header": "Gérez vos candidatures",
+    "description": "Restez organisé tout au long de votre recherche d'emploi. Ajoutez vos candidatures, mettez à jour leur statut à mesure que vous progressez et gardez toutes vos opportunités dans un seul espace facile à gérer.",
+    "empty_state_header": "Commencez à suivre vos candidatures !",
+    "empty_state_desc": "Il semble que vous n'ayez pas encore ajouté de candidatures. Cliquez sur le bouton ci-dessous pour enregistrer votre premier poste et commencer à suivre votre progression.",
+    "empty_state_button": "Ajoutez votre première candidature",
+    "add_application": "Ajouter une candidature",
+    "applied": "candidature envoyée",
+    "interview": "entretien",
+    "accepted": "accepté",
+    "rejected": "refusé",
+    "ghosted": "sans réponse",
+    "view_resume": "voir le CV",
+    "date_applied": "Candidature envoyée le {{date}}",
+    "form": {
+      "title": "Ajouter une nouvelle candidature",
+      "description": "Ajoutez tous les détails de votre dernière candidature pour rester organisé et vous rapprocher de votre prochain poste.",
+      "job_role": "Poste",
+      "job_role_label": "Ingénieur logiciel",
+      "company": "Entreprise",
+      "company_label": "Google",
+      "status": "Statut",
+      "job_type": "Type d'emploi",
+      "location": "Lieu",
+      "source": "Source",
+      "source_label": "LinkedIn, Indeed, etc.",
+      "resume_url": "URL du CV",
+      "notes": "Remarques",
+      "notes_label": "Ajoutez des notes supplémentaires concernant cette candidature..."
     }
   }
 }

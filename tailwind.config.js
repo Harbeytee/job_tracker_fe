@@ -8,6 +8,7 @@ module.exports = {
         "custom-gray": "0 2px 8px 0 rgba(99, 99, 99, 0.3)",
       },
       colors: {
+        background: "#F9F9FA",
         primary: "#5101ff",
         neutral: {
           50: "#f7f8fc",
@@ -20,6 +21,7 @@ module.exports = {
           950: "#000000",
         },
         gray: {
+          100: "#e4e4e7",
           200: "#d3d1d1",
           300: "#D4D4D8",
           400: "#6b6b6b",
