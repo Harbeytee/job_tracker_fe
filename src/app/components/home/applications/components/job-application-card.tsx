@@ -35,9 +35,10 @@ export default function JobApplicationCard({
         />
       </div>
 
-      <Text leadingIcon="map-pin">
-        {application.location || "Not specified"}
-      </Text>
+      {application.location && (
+        <Text leadingIcon="map-pin">{application.location}</Text>
+      )}
+
       <Text leadingIcon="briefcase">{application.type}</Text>
       <Text leadingIcon="globe">{application.source}</Text>
       <Text leadingIcon="calendar">
