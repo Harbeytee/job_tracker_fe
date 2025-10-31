@@ -17,10 +17,7 @@ export default function JobApplicationCard({
   const handleDelete = (id: string) => {};
 
   return (
-    <div
-      key={application.id}
-      className="bg-white rounded-xl shadow-sm p-6 border border-gray-200 hover:shadow-md transition-shadow relative pb-20"
-    >
+    <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-200 hover:shadow-md transition-shadow relative pb-20">
       <div className="flex items-start gap-3 mb-3">
         <div className="flex-1">
           <h3 className="text-lg font-bold text-gray-900">
