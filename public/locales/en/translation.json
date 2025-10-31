@@ -5,6 +5,7 @@
   "click_to_upload": "<1>Click to upload</1> or drag and drop",
   "file_type": "PDF, DOC, or DOCX (MAX. 10MB)",
   "or": "or",
+  "cancel": "Cancel",
   "sign_in": {
     "text": "Sign in",
     "email": "Email",
@@ -99,6 +100,37 @@
       "recognized": "Recognized_sections",
       "not_recognized": "Not recognized",
       "parsing_issues": "Parsing issues"
+    }
+  },
+  "applications": {
+    "header": "Manage Your Applications",
+    "description": "Stay organized throughout your job search. Add your applications, update their status as you progress, and keep all your opportunities in one easy-to-manage place.",
+    "empty_state_header": "Start Tracking Your Job Search",
+    "empty_state_desc": "It looks like you haven't added any applications yet. Click the button below to log your first job and begin tracking its progress.",
+    "empty_state_button": "Add your first application",
+    "add_application": "Add application",
+    "applied": "applied",
+    "interview": "interview",
+    "accepted": "accepted",
+    "rejected": "rejected",
+    "ghosted": "ghosted",
+    "view_resume": "view resume",
+    "date_applied": "Applied, {{date}}",
+    "form": {
+      "title": "Add New Application",
+      "description": "Add all the details of your latest job application to stay organized and move closer to your next role.",
+      "job_role": "Job role",
+      "job_role_placeholder": "Software Engineer",
+      "company": "Company",
+      "company_placeholder": "Google",
+      "status": "Status",
+      "job_type": "Job type",
+      "location": "location",
+      "source": "source",
+      "source_placeholder": "LinkedIn, Indeed, etc",
+      "resume_url": "Resume URL",
+      "notes": "Notes",
+      "notes_placeholder": "Add any additional notes about this application..."
     }
   }
 }

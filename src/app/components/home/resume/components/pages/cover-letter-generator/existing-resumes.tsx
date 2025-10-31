@@ -33,7 +33,7 @@ export default function ExistingResumes({
             }`}
           >
             <div className="flex items-start gap-2.5">
-              <Icon name="document" color="grey-400" />
+              <Icon name="document" color="gray-400" />
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-medium text-gray-900 truncate">
                   {resume.name}

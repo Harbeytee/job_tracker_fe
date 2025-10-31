@@ -1,19 +1,18 @@
 "use client";
 import { useTranslation } from "react-i18next";
 import Cards from "./components/cards";
+import PageHeader from "../../page-header";
 
 export default function Resume() {
   const { t } = useTranslation();
 
   return (
-    <div>
-      <div>
-        <h2 className="text-primary text-3xl font-bold">
-          {t("resume.header")}
-        </h2>
-        <p className="my-4 max-w-[850px] text-lg">{t("resume.description")}</p>
-        <Cards />
-      </div>
-    </div>
+    <>
+      <PageHeader
+        title={t("resume.header")}
+        description={t("resume.description")}
+      />
+      <Cards />
+    </>
   );
 }

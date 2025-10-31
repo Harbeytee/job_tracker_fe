@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { generateInputClasses } from "../../utils.ts/helper";
 import { InputProps } from "../../types/interface";
+import Label from "./label";
 
 export default function InputField({
   type = "text",
@@ -30,17 +31,10 @@ export default function InputField({
   });
   return (
     <div className={`w-full ${className}`}>
-      {label && (
-        <label className="text-base">
-          {label}{" "}
-          {required && (
-            <span className="text-red-500 text-lg inline-block">*</span>
-          )}
-        </label>
-      )}
+      {label && <Label text={label} required={required} />}
       <div
         className={`
-        relative flex items-center mt-1 mb-3  p-2.5 rounded-lg ${classes}
+        ${classes}
        `}
       >
         {leadingContent && <span className="mr-2">{leadingContent}</span>}
@@ -57,7 +51,7 @@ export default function InputField({
             onBlur?.();
           }}
           onKeyDown={onKeyDown}
-          className="w-full h-full focus:outline-none bg-neutral-300 dark:bg-black-950"
+          className="w-full h-full focus:outline-none dark:bg-black-950"
         />
         {trailingContent && <span className="ml-2">{trailingContent}</span>}
       </div>

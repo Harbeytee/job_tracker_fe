@@ -1,5 +1,6 @@
 import resolveConfig from "tailwindcss/resolveConfig";
 import tailwindConfig from "@/../tailwind.config";
+import { useEffect } from "react";
 
 export const generateInputClasses = ({
   value,
@@ -14,7 +15,7 @@ export const generateInputClasses = ({
   focused?: boolean;
   noBorder?: boolean;
 }) => {
-  let textColor = "text-grey-500";
+  let textColor = "text-gray-500";
   if (disabled) {
     textColor = "text-foreground-disabled";
   } else if (value?.length) {
@@ -24,15 +25,15 @@ export const generateInputClasses = ({
   if (noBorder)
     return `w-full text-left bg-neutral-300 dark:bg-black-950 outline-none border-none ${textColor} `;
 
-  return `w-full border rounded-[8px] text-left px-3 ${textColor} ${
+  return `relative flex items-center mt-1 mb-3  p-2.5 rounded-lg w-full border rounded-[8px] text-left px-3 ${textColor} ${
     disabled
       ? "bg-background-system-disabled cursor-not-allowed"
       : "bg-background-system-primary"
-  } ${error ? "border-base-danger" : "border-grey-300"} placeholder-grey-500  
+  } ${error ? "border-base-danger" : "border-gray-100"} placeholder-gray-500  
     ${
       focused
-        ? "shadow-[0px_0px_0px_2.5px_#9EE35B4D] border-yala-primary outline-none"
-        : "shadow-[0px_1px_2px_0px_#0A0D120D]"
+        ? "shadow-[0px_0px_0px_2.5px_#9EE35B4D] border-primary outline-none"
+        : ""
     }
     focus:shadow-[0px_0px_0px_2.5px_#9EE35B4D]  focus:outline-none`;
 };
@@ -62,3 +63,22 @@ export const getColorValue = (colorKey: string): string | undefined => {
 //This function capitalizes the first letter of a string
 export const capitalize = (text?: string) =>
   text ? text.charAt(0).toUpperCase() + text.slice(1).toLowerCase() : "";
+
+export const useOutsideClick = (
+  ref: React.RefObject<HTMLElement>,
+  handler: () => void
+) => {
+  useEffect(() => {
+    const listener = (event: MouseEvent) => {
+      if (!ref.current || ref.current.contains(event.target as Node)) {
+        return;
+      }
+      handler();
+    };
+
+    document.addEventListener("mousedown", listener);
+    return () => {
+      document.removeEventListener("mousedown", listener);
+    };
+  }, [ref, handler]);
+};

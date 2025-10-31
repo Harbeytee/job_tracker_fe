@@ -24,20 +24,21 @@ export const TextAreaField = ({
   resize = "vertical",
   maxLength,
   noBorder = false,
+  required,
   ...props
 }: TextAreaFieldProps) => {
   const baseClasses =
-    "w-full rounded-[8px] text-left p-4 placeholder-grey-500 shadow-[0px_1px_2px_0px_#0A0D120D]  focus:outline-none text-sm";
+    "w-full rounded-[8px] text-left p-4 placeholder-gray-500  focus:outline-none text-sm";
 
   const stateClasses = disabled ? "bg-gray-100 cursor-not-allowed" : "bg-white";
-  const errorClasses = error ? "border-base-danger" : "border-grey-100";
+  const errorClasses = error ? "border-base-danger" : "border-gray-100";
   const resizeClass = `resize-${resize}`;
   const borderClass = noBorder
     ? "border-none"
-    : "border border-grey-300 focus:border-primary";
+    : "border border-gray-100 focus:border-primary";
   return (
     <div className={`w-full ${className}`}>
-      {label && <Label text={label} />}
+      {label && <Label text={label} required={required} />}
 
       <textarea
         maxLength={maxLength}
