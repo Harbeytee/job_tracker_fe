@@ -7,12 +7,12 @@ export default function Resume() {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <>
       <PageHeader
         title={t("resume.header")}
         description={t("resume.description")}
       />
       <Cards />
-    </div>
+    </>
   );
 }
