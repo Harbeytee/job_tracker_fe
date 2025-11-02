@@ -108,6 +108,7 @@
     "empty_state_desc": "Il semble que vous n'ayez pas encore ajouté de candidatures. Cliquez sur le bouton ci-dessous pour enregistrer votre premier poste et commencer à suivre votre progression.",
     "empty_state_button": "Ajoutez votre première candidature",
     "add_application": "Ajouter une candidature",
+    "all": "tout",
     "applied": "candidature envoyée",
     "interview": "entretien",
     "accepted": "accepté",
