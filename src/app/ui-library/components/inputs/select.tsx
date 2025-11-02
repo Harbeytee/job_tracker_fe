@@ -106,7 +106,7 @@ export const Select = ({
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   placeholder={"search"}
-                  className="w-full px-3 py-1 border border-gray-300 rounded-md focus:shadow-[0px_0px_0px_2.5px_#9EE35B4D] focus:outline-none"
+                  className="w-full px-3 py-1 border border-gray-300 rounded-md focus:border-primary focus:outline-none"
                   autoFocus
                 />
               </div>

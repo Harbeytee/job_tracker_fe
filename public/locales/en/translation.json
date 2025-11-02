@@ -109,6 +109,7 @@
     "empty_state_desc": "It looks like you haven't added any applications yet. Click the button below to log your first job and begin tracking its progress.",
     "empty_state_button": "Add your first application",
     "add_application": "Add application",
+    "all": "all",
     "applied": "applied",
     "interview": "interview",
     "accepted": "accepted",

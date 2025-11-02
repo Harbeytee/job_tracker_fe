@@ -30,12 +30,8 @@ export const generateInputClasses = ({
       ? "bg-background-system-disabled cursor-not-allowed"
       : "bg-background-system-primary"
   } ${error ? "border-base-danger" : "border-gray-100"} placeholder-gray-500  
-    ${
-      focused
-        ? "shadow-[0px_0px_0px_2.5px_#9EE35B4D] border-primary outline-none"
-        : ""
-    }
-    focus:shadow-[0px_0px_0px_2.5px_#9EE35B4D]  focus:outline-none`;
+    ${focused ? "border-primary outline-none" : ""}
+   `;
 };
 
 const fullConfig = resolveConfig(tailwindConfig);
