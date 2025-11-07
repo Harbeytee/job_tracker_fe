@@ -1,9 +1,10 @@
 import { colorClasses } from "@/app/components/home/applications/utils/helpers";
 import { useState } from "react";
+import { JobStatus } from "../types/enums";
 
 interface Tab {
   label: string;
-  value: string;
+  value: JobStatus;
   color: string;
 }
 
@@ -14,7 +15,7 @@ export default function ApplicationTabs({
   tabs: Tab[];
   count: string;
 }) {
-  const [activeTab, setActiveTab] = useState("applied");
+  const [activeTab, setActiveTab] = useState(JobStatus.Applied);
 
   return (
     <div className="flex flex-wrap border-b border-gray-200  mb-7">

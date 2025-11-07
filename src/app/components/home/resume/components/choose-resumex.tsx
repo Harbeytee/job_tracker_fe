@@ -64,10 +64,7 @@ export default function ChooseResume({
         )}
 
         {uploadMethod === "existing" && (
-          <ExistingResumes
-            selectedResume={selectedFile}
-            setSelectedResume={setSelectedFile}
-          />
+          <ExistingResumes setSelectedResume={setSelectedFile} />
         )}
 
         <div className="mt-6">

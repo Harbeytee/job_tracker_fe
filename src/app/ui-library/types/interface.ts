@@ -1,4 +1,5 @@
 import { Ref } from "react";
+import { IconNames } from "./types";
 
 export interface InputProps {
   type?: string;
@@ -18,4 +19,11 @@ export interface InputProps {
   trailingContent?: React.ReactNode;
   onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
   noBorder?: boolean;
+}
+
+export interface Tab {
+  id: string;
+  desc: string;
+  label: string;
+  icon?: IconNames;
 }

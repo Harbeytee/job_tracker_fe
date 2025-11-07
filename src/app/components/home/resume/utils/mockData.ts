@@ -1,14 +1,26 @@
+import { Tab } from "@/app/ui-library/types/interface";
 import { ResumeStatus } from "../types/enums";
 import { ScanResults } from "../types/interfaces";
 
-export const existingResumes = [
+export const existingResumes: Tab[] = [
   {
     id: "1",
-    name: "Software Engineer Resume.pdf",
-    date: "Updated 2 days ago",
+    label: "Software Engineer Resume.pdf",
+    desc: "Updated 2 days ago",
+    icon: "document",
   },
-  { id: "2", name: "Product Manager Resume.pdf", date: "Updated 1 week ago" },
-  { id: "3", name: "Marketing Resume.pdf", date: "Updated 2 weeks ago" },
+  {
+    id: "2",
+    label: "Product Manager Resume.pdf",
+    desc: "Updated 1 week ago",
+    icon: "document",
+  },
+  {
+    id: "3",
+    label: "Marketing Resume.pdf",
+    desc: "Updated 2 weeks ago",
+    icon: "document",
+  },
 ];
 
 export const atsResults: ScanResults = {

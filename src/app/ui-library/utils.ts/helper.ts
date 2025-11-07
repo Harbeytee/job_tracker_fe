@@ -25,12 +25,10 @@ export const generateInputClasses = ({
   if (noBorder)
     return `w-full text-left bg-neutral-300 dark:bg-black-950 outline-none border-none ${textColor} `;
 
-  return `relative flex items-center mt-1 mb-3  p-2.5 rounded-lg w-full border rounded-[8px] text-left px-3 ${textColor} ${
-    disabled
-      ? "bg-background-system-disabled cursor-not-allowed"
-      : "bg-background-system-primary"
+  return `relative flex items-center mt-1 mb-3  p-2.5 rounded-lg w-full border rounded-[8px] text-left px-3  ${textColor} ${
+    disabled ? "opacity-50" : "bg-background-system-primary"
   } ${error ? "border-base-danger" : "border-gray-100"} placeholder-gray-500  
-    ${focused ? "border-primary outline-none" : ""}
+    ${focused ? "!border-purple-500 outline-none" : ""}
    `;
 };
 

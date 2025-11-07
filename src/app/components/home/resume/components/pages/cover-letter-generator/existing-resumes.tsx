@@ -1,14 +1,12 @@
-import { Icon } from "@/app/ui-library/components/icons/icon";
 import Label from "@/app/ui-library/components/inputs/label";
 import { useTranslation } from "react-i18next";
 import { existingResumes } from "../../../utils/mockData";
+import TabSelectGroup from "@/app/ui-library/components/buttons/tab-select-group";
 
 export default function ExistingResumes({
   setSelectedResume,
-  selectedResume,
 }: {
   setSelectedResume: (val: string) => void;
-  selectedResume: string | null;
 }) {
   const { t } = useTranslation();
 
@@ -20,29 +18,10 @@ export default function ExistingResumes({
         className="flex-1 overflow-y-auto space-y-2 pr-2 min-h-0"
         style={{ maxHeight: "400px" }}
       >
-        {existingResumes.map((resume) => (
-          <div
-            key={resume.id}
-            onClick={() => {
-              setSelectedResume(resume.name);
-            }}
-            className={`p-4 border-2 rounded-lg cursor-pointer transition-all ${
-              selectedResume === resume.name
-                ? "border-primary/50 bg-primary/5"
-                : "border-gray-200 hover:border-gray-300"
-            }`}
-          >
-            <div className="flex items-start gap-2.5">
-              <Icon name="document" color="gray-400" />
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-gray-900 truncate">
-                  {resume.name}
-                </p>
-                <p className="text-xs text-gray-500 mt-1">{resume.date}</p>
-              </div>
-            </div>
-          </div>
-        ))}
+        <TabSelectGroup
+          tabs={existingResumes}
+          handleClick={setSelectedResume}
+        />
       </div>
     </div>
   );
