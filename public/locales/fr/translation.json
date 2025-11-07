@@ -132,5 +132,71 @@
       "notes": "Remarques",
       "notes_label": "Ajoutez des notes supplémentaires concernant cette candidature..."
     }
+  },
+  "interview_prep": {
+    "back": "Retour",
+    "continue": "Continuer",
+    "start": "Commencer {{action}}",
+    "header": "Améliorez vos compétences en entretien",
+    "desc": "Développez une confiance réelle grâce à des défis interactifs conçus pour améliorer vos performances lors de tout entretien.",
+    "button": " Commencez votre parcours",
+    "setup": {
+      "mode": {
+        "title": "Choisissez votre mode d’entretien",
+        "desc": "Choisissez le style qui correspond à votre objectif de préparation",
+        "mode": "Mode",
+        "practice": {
+          "title": "Pratique",
+          "subtitle": "Apprenez à votre propre rythme",
+          "desc": "Temps illimité pour réfléchir. Obtenez un retour instantané avec des explications détaillées après chaque réponse. Parfait pour renforcer votre confiance."
+        },
+        "challenge": {
+          "title": "Défi",
+          "subtitle": "Courez contre la montre",
+          "desc": "Questions chronométrées pour simuler la pression d’un véritable entretien. Consultez toutes les réponses et explications à la fin du défi."
+        },
+        "survival": {
+          "title": "Survie",
+          "subtitle": "Chaque réponse compte",
+          "desc": "Commencez avec 3 vies. Chaque mauvaise réponse vous coûte une vie et affiche la bonne réponse. Jusqu’où pouvez-vous tenir ?"
+        }
+      },
+      "role": {
+        "role": "Rôle",
+        "placeholder": "ex : Développeur Frontend, Assistant Virtuel, Data Scientist...",
+        "title": "Pour quel poste passez-vous un entretien ?",
+        "desc": "Indiquez le poste pour lequel vous vous préparez"
+      },
+      "level": {
+        "title": "Sélectionnez votre niveau d’expérience",
+        "desc": "Choisissez le niveau qui correspond à votre expérience",
+        "level": "Niveau",
+        "entry": "Débutant",
+        "entry_desc": "Début de votre parcours professionnel",
+        "mid": "Intermédiaire",
+        "mid_desc": "3 à 5 ans d’expérience",
+        "senior": "Confirmé",
+        "senior_desc": "Plus de 5 ans d’expérience",
+        "lead": "Responsable / Principal",
+        "lead_desc": "Leadership et architecture"
+      },
+      "skills": {
+        "skills": "Compétences",
+        "title": "Sélectionnez les compétences sur lesquelles vous concentrer",
+        "desc": "Choisissez les compétences que vous souhaitez renforcer avant votre entretien. Vous pouvez les rechercher ou commencer avec les plus courantes ci-dessous.",
+        "max_reached": "Vous avez atteint le maximum de {{max}} compétences. Supprimez-en une pour en ajouter une autre.",
+        "start_typing": " Commencez à taper ou sélectionnez des compétences ci-dessous pour définir votre domaine de concentration.",
+        "focus": "Domaine de concentration ({{length}} / {{max}} sélectionnées)",
+        "remove": "Supprimer {{skill}}",
+        "placeholder": "Recherchez des compétences ou tapez pour en ajouter une personnalisée...",
+        "unavailable": "Toutes les compétences populaires ont été sélectionnées ou ne sont pas disponibles.",
+        "no_suggestions": "Aucune suggestion correspondant à \"{{searchVal}}\". Utilisez 'Ajouter personnalisé' ci-dessus pour continuer.",
+        "add": "Ajouter personnalisé",
+        "fetching": " Récupération des compétences récentes...",
+        "searching": "Recherche...",
+        "matching": "Suggestions correspondantes ({{length}}) :",
+        "popular": "Suggestions populaires (Cliquez pour ajouter) :"
+      }
+    }
   }
 }

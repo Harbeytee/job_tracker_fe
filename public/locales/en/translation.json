@@ -133,5 +133,71 @@
       "notes": "Notes",
       "notes_placeholder": "Add any additional notes about this application..."
     }
+  },
+  "interview_prep": {
+    "back": "Back",
+    "continue": "Continue",
+    "start": "Start {{action}}",
+    "header": "Level Up Your Interview Game",
+    "desc": "Develop real-world confidence through interactive challenges designed to elevate your performance in any interview.",
+    "button": " Start Your Journey",
+    "setup": {
+      "mode": {
+        "title": "Choose your interview mode",
+        "desc": "Pick the style that fits your preparation goal",
+        "mode": "Mode",
+        "practice": {
+          "title": "Practice",
+          "subtitle": "Learn at your own pace",
+          "desc": "Unlimited time to think. Get instant feedback with detailed explanations after each answer. Perfect for building confidence."
+        },
+        "challenge": {
+          "title": "Challenge",
+          "subtitle": "Race against the clock",
+          "desc": "Time-based questions to simulate real interview pressure. Review all answers and explanations at the end of the challenge."
+        },
+        "survival": {
+          "title": "Survival",
+          "subtitle": "Every answer count",
+          "desc": "Start with 3 lives. Each wrong answer costs a life and shows you the correct answer. How long can you survive?"
+        }
+      },
+      "role": {
+        "role": "Role",
+        "placeholder": "e.g., Frontend Developer, Virtual Assistant, Data Scientist..",
+        "title": "What role are you interviewing for?",
+        "desc": "Tell us the position you're preparing for"
+      },
+      "level": {
+        "title": "Select your experience level",
+        "desc": "Choose the level that matches your experience",
+        "level": "Level",
+        "entry": "Entry Level",
+        "entry_desc": "Starting your career journey",
+        "mid": "Mid Level",
+        "mid_desc": "3-5 years of experience",
+        "senior": "Senior Level",
+        "senior_desc": "5+ years of experience",
+        "lead": "Lead/Principal",
+        "lead_desc": "Leadership & architecture"
+      },
+      "skills": {
+        "skills": "Skills",
+        "title": "Select skills to focus on",
+        "desc": "Select the skills you'd like to strengthen before your interview. You can search for your own or start with the most commonon ones below",
+        "max_reached": "You have reached the maximum of {{max}} skills. Remove one to add another.",
+        "start_typing": " Start typing or select skills below to define your focus area.",
+        "focus": "Focus Area ({{length}} / {{max}} selected)",
+        "remove": "Remove {{skill}}",
+        "placeholder": "Search skills or type to add custom skill...",
+        "unavailable": "All popular skills have been selected or are unavailable.",
+        "no_suggestions": "No suggestions matching \"{{searchVal}\". Use 'Add Custom' above to proceed.",
+        "add": "Add Custom",
+        "fetching": " Fetching latest skills...",
+        "searching": "Searching...",
+        "matching": "Matching Suggestions ({{length}}):",
+        "popular": "Popular Suggestions (Click to Add):"
+      }
+    }
   }
 }

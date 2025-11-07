@@ -30,11 +30,11 @@ export default function InputField({
     noBorder,
   });
   return (
-    <div className={`w-full ${className}`}>
+    <div className={`w-full relative`}>
       {label && <Label text={label} required={required} />}
       <div
         className={`
-        ${classes}
+        ${classes} ${className}
        `}
       >
         {leadingContent && <span className="mr-2">{leadingContent}</span>}
@@ -51,7 +51,7 @@ export default function InputField({
             onBlur?.();
           }}
           onKeyDown={onKeyDown}
-          className="w-full h-full focus:outline-none dark:bg-black-950"
+          className="w-full h-full bg-transparent placeholder-slate-500  focus:outline-none dark:bg-black-950"
         />
         {trailingContent && <span className="ml-2">{trailingContent}</span>}
       </div>

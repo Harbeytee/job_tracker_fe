@@ -11,6 +11,7 @@ interface ButtonProps extends ComponentProps<"button"> {
   leadingIcon?: IconNames;
   trailingIcon?: IconNames;
   href?: string;
+  iconSize?: number;
 }
 
 export const PrimaryButton = ({
@@ -21,6 +22,7 @@ export const PrimaryButton = ({
   leadingIcon,
   trailingIcon,
   href,
+  iconSize = 16,
   ...props
 }: ButtonProps) => (
   <button
@@ -32,9 +34,9 @@ export const PrimaryButton = ({
       <Loader />
     ) : (
       <>
-        {leadingIcon && <Icon name={leadingIcon} size={16} />}
+        {leadingIcon && <Icon name={leadingIcon} size={iconSize} />}
         {children}
-        {trailingIcon && <Icon name={trailingIcon} size={16} />}
+        {trailingIcon && <Icon name={trailingIcon} size={iconSize} />}
       </>
     )}
   </button>
