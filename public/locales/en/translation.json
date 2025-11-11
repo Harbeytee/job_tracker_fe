@@ -143,6 +143,10 @@
     "desc": "Develop real-world confidence through interactive challenges designed to elevate your performance in any interview.",
     "button": " Start Your Journey",
     "setup": {
+      "session_details": " Your Session Details",
+      "experience_level": "Experience level",
+      "total_questions": " Total Questions",
+      "multiple_choice": "{{questions}} multiple-choice questions",
       "mode": {
         "title": "Choose your interview mode",
         "desc": "Pick the style that fits your preparation goal",

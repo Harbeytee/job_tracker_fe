@@ -142,6 +142,10 @@
     "desc": "Développez une confiance réelle grâce à des défis interactifs conçus pour améliorer vos performances lors de tout entretien.",
     "button": " Commencez votre parcours",
     "setup": {
+      "session_details": "Détails de votre session",
+      "experience_level": "Niveau d'expérience",
+      "total_questions": "Nombre total de questions",
+      "multiple_choice": "{{questions}} questions à choix multiple",
       "mode": {
         "title": "Choisissez votre mode d’entretien",
         "desc": "Choisissez le style qui correspond à votre objectif de préparation",

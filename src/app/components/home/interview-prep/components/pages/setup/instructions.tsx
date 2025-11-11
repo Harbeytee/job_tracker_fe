@@ -6,6 +6,7 @@ import { GameMode } from "../../../types/types";
 import { colorClasses, getModeDetails } from "../../../utils/helpers";
 import { ModeDetails } from "../../../types/interfaces";
 import { OutlineButton } from "@/app/ui-library/components/buttons/outline-button";
+import SessionDetails from "./session-details";
 
 export default function Instructions() {
   const router = useRouter();
@@ -47,40 +48,7 @@ export default function Instructions() {
             ))}
           </div>
 
-          <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-lg mb-8 border border-gray-100">
-            <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
-              <Icon name="info" color="gray-700" size={20} />
-              Your Session Details
-            </h3>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white p-3 rounded-lg">
-                <span className="text-gray-500 text-sm block mb-1">Role</span>
-                <p className="font-semibold text-gray-900">{role}</p>
-              </div>
-              <div className="bg-white p-3 rounded-lg">
-                <span className="text-gray-500 text-sm block mb-1">
-                  Experience Level
-                </span>
-                <p className="font-semibold text-gray-900 capitalize">
-                  {level}
-                </p>
-              </div>
-              <div className="bg-white p-3 rounded-lg col-span-2">
-                <span className="text-gray-500 text-sm block mb-1">Mode</span>
-                <p className={`font-bold capitalize ${colors.accent} text-lg`}>
-                  {mode}
-                </p>
-              </div>
-              <div className="bg-white p-3 rounded-lg col-span-2">
-                <span className="text-gray-500 text-sm block mb-1">
-                  Total Questions
-                </span>
-                <p className="font-semibold text-gray-900">
-                  5 multiple-choice questions
-                </p>
-              </div>
-            </div>
-          </div>
+          <SessionDetails accent={colors.accent} />
 
           <div className="flex gap-4">
             <OutlineButton
