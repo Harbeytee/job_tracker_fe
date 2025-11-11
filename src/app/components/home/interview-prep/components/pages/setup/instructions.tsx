@@ -7,10 +7,12 @@ import { colorClasses, getModeDetails } from "../../../utils/helpers";
 import { ModeDetails } from "../../../types/interfaces";
 import { OutlineButton } from "@/app/ui-library/components/buttons/outline-button";
 import SessionDetails from "./session-details";
+import { useTranslation } from "react-i18next";
 
 export default function Instructions() {
+  const { t } = useTranslation();
   const router = useRouter();
-  const { role, step, level, mode, setStep } = useSetupContext();
+  const { step, mode, setStep } = useSetupContext();
 
   const modeDetails: ModeDetails | undefined =
     getModeDetails()[mode as GameMode];
@@ -57,7 +59,7 @@ export default function Instructions() {
               onClick={() => setStep(step - 1)}
               className="flex-1 !bg-gray-50 text-gray-500"
             >
-              Back to Setup
+              {t("interview_prep.setup.back_to_setup")}
             </OutlineButton>
 
             <PrimaryButton
@@ -66,7 +68,7 @@ export default function Instructions() {
               onClick={() => router.push("/interview-prep/quiz")}
               className={`flex-1 ${colors.button} text-white py-4 rounded-lg font-bold transition-colors flex items-center justify-center gap-2 shadow-md`}
             >
-              Start Interview
+              {t("interview_prep.setup.start_interview")}
             </PrimaryButton>
           </div>
         </div>

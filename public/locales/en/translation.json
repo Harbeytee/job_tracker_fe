@@ -147,6 +147,8 @@
       "experience_level": "Experience level",
       "total_questions": " Total Questions",
       "multiple_choice": "{{questions}} multiple-choice questions",
+      "back_to_setup": "Back to Setup",
+      "start_interview": "Start Interview",
       "mode": {
         "title": "Choose your interview mode",
         "desc": "Pick the style that fits your preparation goal",

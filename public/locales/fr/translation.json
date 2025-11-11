@@ -146,6 +146,8 @@
       "experience_level": "Niveau d'expérience",
       "total_questions": "Nombre total de questions",
       "multiple_choice": "{{questions}} questions à choix multiple",
+      "back_to_setup": "Retour à la configuration",
+      "start_interview": "Commencer l'entretien",
       "mode": {
         "title": "Choisissez votre mode d’entretien",
         "desc": "Choisissez le style qui correspond à votre objectif de préparation",
