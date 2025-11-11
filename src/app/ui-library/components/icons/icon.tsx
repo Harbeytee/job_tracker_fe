@@ -6,12 +6,14 @@ interface IconProps {
   name: IconNames;
   size?: number | string;
   color?: string;
+  fill?: string;
 }
 
 export const Icon = ({
   name,
   size = 24,
   color = "currentColor",
+  fill,
 }: IconProps) => {
   const Icon = icons[name];
 
@@ -29,7 +31,9 @@ export const Icon = ({
       viewBox={props.viewBox}
       width={size}
       height={size}
-      fill={props.fill === "none" ? "none" : colorValue}
+      fill={
+        fill !== undefined ? fill : props.fill === "none" ? "none" : colorValue
+      }
       stroke={props.fill === "none" ? colorValue : "none"}
     >
       {props.children}

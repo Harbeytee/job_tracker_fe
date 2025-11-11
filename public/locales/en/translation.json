@@ -1,4 +1,5 @@
 {
+  "next": "next",
   "is_required": "{{field}} is required",
   "continue": "or continue with",
   "email_placeholder": "JohnDoe@example.com",
@@ -184,7 +185,7 @@
       "skills": {
         "skills": "Skills",
         "title": "Select skills to focus on",
-        "desc": "Select the skills you'd like to strengthen before your interview. You can search for your own or start with the most commonon ones below",
+        "desc": "Select the skills you'd like to strengthen before your interview. You can search for your own or start with the most common ones below",
         "max_reached": "You have reached the maximum of {{max}} skills. Remove one to add another.",
         "start_typing": " Start typing or select skills below to define your focus area.",
         "focus": "Focus Area ({{length}} / {{max}} selected)",
@@ -197,6 +198,45 @@
         "searching": "Searching...",
         "matching": "Matching Suggestions ({{length}}):",
         "popular": "Popular Suggestions (Click to Add):"
+      }
+    },
+    "quiz": {
+      "finish": "Finish interview",
+      "question": "Question",
+      "time_remaining": "Time Remaining",
+      "time_up": "Time's Up!",
+      "quiz_complete": "Quiz Completed!",
+      "perform": "Here's how you performed",
+      "score": "{{score}} out of {{total}} questions correct",
+      "categories": "Categories",
+      "review_answers": "Review Answers",
+      "your_answer": "Your answer",
+      "correct_answer": " Correct answer",
+      "try_another": "Try Another Quiz",
+      "practice": {
+        "title": "Practice Mode",
+        "desc": "Learn at your own pace with full flexibility",
+        "no_limit": "No time limit - take as long as you need",
+        "navigate": "Navigate freely between all questions",
+        "change_answers": "Change answers anytime before submission",
+        "view_answers": "View correct answers and explanations after completion"
+      },
+      "challenge": {
+        "title": "Challenge Mode",
+        "desc": "Race against time to test your speed and accuracy",
+        "timer": "30 minutes total time limit for all questions",
+        "cannot_return": "Cannot return to previous questions once you move forward",
+        "can_change": "Can change your answer before moving to next question",
+        "quiz_ends": "Quiz ends when time runs out or all questions completed"
+      },
+      "survival": {
+        "title": "Survival Mode",
+        "desc": "High stakes - every mistake counts!",
+        "lives": "Start with 3 lives - lose one for each wrong answer",
+        "timed": "Timed per question - think fast!",
+        "final_answer": "Answer is final once selected - no changes allowed",
+        "correct_answer": "See correct answer immediately after selection",
+        "game_ends": "Game ends if you run out of lives"
       }
     }
   }

@@ -1,11 +1,10 @@
-import { FlowContext } from "./flow-container";
-import { useContext } from "react";
 import { Icon } from "@/app/ui-library/components/icons/icon";
 import { IconNames } from "@/app/ui-library/types/types";
 import { getModes } from "../../../utils/helpers";
+import { useSetupContext } from "../store/setup-context";
 
-export default function SelectMode({ step }: { step: number }) {
-  const { mode, setMode } = useContext(FlowContext)!;
+export default function SelectMode() {
+  const { mode, setMode, step } = useSetupContext();
   const modes = getModes();
 
   if (step == 4)
@@ -27,7 +26,7 @@ export default function SelectMode({ step }: { step: number }) {
                 <div
                   className={`p-3 rounded-xl bg-gradient-to-br ${item.color} flex-shrink-0 shadow-xl`}
                 >
-                  <Icon name={item.icon as IconNames} size={20} color="white" />
+                  <Icon name={item.icon as IconNames} size={25} color="white" />
                 </div>
 
                 <div className="flex-1">

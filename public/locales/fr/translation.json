@@ -1,4 +1,5 @@
 {
+  "next": "suivant",
   "is_required": "{{field}} est requis",
   "email_placeholder": "votreemail@exemple.com",
   "continue": "ou continuer avec",
@@ -196,6 +197,45 @@
         "searching": "Recherche...",
         "matching": "Suggestions correspondantes ({{length}}) :",
         "popular": "Suggestions populaires (Cliquez pour ajouter) :"
+      }
+    },
+    "quiz": {
+      "finish": "Terminer l'entretien",
+      "question": "Question",
+      "time_remaining": "Temps restant",
+      "time_up": "Le temps est écoulé !",
+      "quiz_complete": "Quiz terminé !",
+      "perform": "Voici vos performances",
+      "score": "{{score}} sur {{total}} questions correctes",
+      "categories": "Catégories",
+      "review_answers": "Revoir les réponses",
+      "your_answer": "Votre réponse",
+      "correct_answer": "Réponse correcte",
+      "try_another": "Essayer un autre quiz",
+      "practice": {
+        "title": "Mode Pratique",
+        "desc": "Apprenez à votre rythme avec une flexibilité totale",
+        "no_limit": "Pas de limite de temps - prenez tout le temps dont vous avez besoin",
+        "navigate": "Naviguez librement entre toutes les questions",
+        "change_answers": "Modifiez vos réponses à tout moment avant la soumission",
+        "view_answers": "Voir les réponses correctes et les explications après la complétion"
+      },
+      "challenge": {
+        "title": "Mode Challenge",
+        "desc": "Courez contre la montre pour tester votre rapidité et précision",
+        "timer": "Limite de temps totale de 30 minutes pour toutes les questions",
+        "cannot_return": "Impossible de revenir aux questions précédentes une fois passées",
+        "can_change": "Vous pouvez changer votre réponse avant de passer à la question suivante",
+        "quiz_ends": "Le quiz se termine lorsque le temps est écoulé ou toutes les questions sont complétées"
+      },
+      "survival": {
+        "title": "Mode Survie",
+        "desc": "Enjeux élevés - chaque erreur compte !",
+        "lives": "Commencez avec 3 vies - perdez-en une pour chaque mauvaise réponse",
+        "timed": "Chronométré par question - réfléchissez vite !",
+        "final_answer": "La réponse est définitive une fois sélectionnée - aucune modification autorisée",
+        "correct_answer": "Voir la réponse correcte immédiatement après la sélection",
+        "game_ends": "Le jeu se termine si vous n'avez plus de vies"
       }
     }
   }

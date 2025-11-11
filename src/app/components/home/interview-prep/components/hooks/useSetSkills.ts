@@ -1,10 +1,10 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { availableSkills } from "../../utils/helpers";
-import { FlowContext } from "../pages/setup/flow-container";
+import { useSetupContext } from "../pages/store/setup-context";
 
 export default function useSetSkills() {
   //to select skill
-  const { skills, setSkills } = useContext(FlowContext)!;
+  const { skills, setSkills, step } = useSetupContext();
   const maxSkill = 5;
 
   const toggleSkill = (skill: string) => {
@@ -53,5 +53,6 @@ export default function useSetSkills() {
     skills,
     maxSkill,
     setSkillSearch,
+    step,
   };
 }

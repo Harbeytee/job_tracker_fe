@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
+import { useSetupContext } from "../store/setup-context";
 
-export default function ProgressBar({ step }: { step: number }) {
+export default function ProgressBar() {
   const { t } = useTranslation();
+  const { step } = useSetupContext();
 
   return (
     <div className="mb-8">
