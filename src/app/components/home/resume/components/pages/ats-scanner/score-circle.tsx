@@ -52,7 +52,7 @@ export default function ScoreCircle({
           className={`${size === "large" ? "text-3xl" : "text-xl"} font-bold`}
           style={{ color: getColor(score) }}
         >
-          {score}
+          {score}%
         </span>
       </div>
     </div>

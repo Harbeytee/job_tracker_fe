@@ -1,10 +1,9 @@
-import { useContext } from "react";
-import { FlowContext } from "./flow-container";
 import InputField from "@/app/ui-library/components/inputs/input-field";
 import { useTranslation } from "react-i18next";
+import { useSetupContext } from "../store/setup-context";
 
-export default function SelectRole({ step }: { step: number }) {
-  const { role, setRole } = useContext(FlowContext)!;
+export default function SelectRole() {
+  const { role, setRole, step } = useSetupContext();
   const { t } = useTranslation();
 
   if (step == 1)

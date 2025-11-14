@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-export default function useSetup({ step }: { step: number }) {
+export default function useSetup() {
   const [role, setRole] = useState("");
   const [level, setLevel] = useState("");
   const [mode, setMode] = useState("");
   const [skills, setSkills] = useState<string[]>([]);
   const { t } = useTranslation();
+  const [step, setStep] = useState(1);
 
   const stepsContent = [
     {
@@ -43,5 +44,7 @@ export default function useSetup({ step }: { step: number }) {
     level,
     mode,
     skills,
+    step,
+    setStep,
   };
 }

@@ -10,6 +10,7 @@ interface ButtonProps extends ComponentProps<"button"> {
   isLoading?: boolean;
   leadingIcon?: IconNames;
   trailingIcon?: IconNames;
+  iconSize?: number;
 }
 
 export const OutlineButton = ({
@@ -19,6 +20,7 @@ export const OutlineButton = ({
   isLoading,
   leadingIcon,
   trailingIcon,
+  iconSize = 16,
   ...props
 }: ButtonProps) => (
   <button
@@ -30,9 +32,9 @@ export const OutlineButton = ({
       <Loader />
     ) : (
       <>
-        {leadingIcon && <Icon name={leadingIcon} size={16} />}
+        {leadingIcon && <Icon name={leadingIcon} size={iconSize} />}
         {children}
-        {trailingIcon && <Icon name={trailingIcon} size={16} />}
+        {trailingIcon && <Icon name={trailingIcon} size={iconSize} />}
       </>
     )}
   </button>

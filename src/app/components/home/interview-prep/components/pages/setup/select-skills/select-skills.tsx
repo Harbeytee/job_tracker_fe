@@ -6,7 +6,7 @@ import AvailableSkills from "./available-skills";
 import useSetSkills from "../../../hooks/useSetSkills";
 import { useTranslation } from "react-i18next";
 
-export default function SelectSkills({ step }: { step: number }) {
+export default function SelectSkills() {
   const { t } = useTranslation();
   const {
     removeSkill,
@@ -17,6 +17,7 @@ export default function SelectSkills({ step }: { step: number }) {
     skills,
     maxSkill,
     setSkillSearch,
+    step,
   } = useSetSkills();
 
   if (step == 3)

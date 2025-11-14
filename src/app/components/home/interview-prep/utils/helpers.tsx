@@ -1,4 +1,6 @@
 import i18n from "@/app/internationalization/config";
+import { GameMode } from "../types/types";
+import { ModeDetails } from "../types/interfaces";
 
 export const getModes = () => [
   {
@@ -80,3 +82,100 @@ export const getLevels = () => [
     desc: i18n.t("interview_prep.setup.level.lead_desc"),
   },
 ];
+
+export const getModeDetails = (): Record<GameMode, ModeDetails> => ({
+  practice: {
+    mode: "practice",
+    color: "blue",
+    Icon: "book",
+    title: i18n.t("interview_prep.quiz.practice.title"),
+    description: i18n.t("interview_prep.quiz.practice.desc"),
+    features: [
+      { Icon: "clock", text: i18n.t("interview_prep.quiz.practice.no_limit") },
+      {
+        Icon: "chevron-left",
+        text: i18n.t("interview_prep.quiz.practice.navigate"),
+      },
+      {
+        Icon: "edit",
+        text: i18n.t("interview_prep.quiz.practice.change_answers"),
+      },
+      {
+        Icon: "eye",
+        text: i18n.t("interview_prep.quiz.practice.view_answers"),
+      },
+    ],
+  },
+  challenge: {
+    mode: "challenge",
+    color: "purple",
+    Icon: "zap",
+    title: i18n.t("interview_prep.quiz.challenge.title"),
+    description: i18n.t("interview_prep.quiz.challenge.desc"),
+    features: [
+      {
+        Icon: "timer",
+        text: i18n.t("interview_prep.quiz.challenge.timer"),
+      },
+      {
+        Icon: "chevron-right",
+        text: i18n.t("interview_prep.quiz.challenge.cannot_return"),
+      },
+      {
+        Icon: "edit",
+        text: i18n.t("interview_prep.quiz.challenge.can_change"),
+      },
+      {
+        Icon: "award",
+        text: i18n.t("interview_prep.quiz.challenge.quiz_ends"),
+      },
+    ],
+  },
+  survival: {
+    mode: "survival",
+    color: "orange",
+    Icon: "heart",
+    title: i18n.t("interview_prep.quiz.survival.title"),
+    description: i18n.t("interview_prep.quiz.survival.desc"),
+    features: [
+      {
+        Icon: "heart",
+        text: i18n.t("interview_prep.quiz.survival.lives"),
+      },
+      { Icon: "timer", text: i18n.t("interview_prep.quiz.survival.timed") },
+      {
+        Icon: "lock",
+        text: i18n.t("interview_prep.quiz.survival.final_answer"),
+      },
+      {
+        Icon: "eye",
+        text: i18n.t("interview_prep.quiz.survival.correct_answer"),
+      },
+      { Icon: "close", text: i18n.t("interview_prep.quiz.survival.game_ends") },
+    ],
+  },
+});
+
+export const colorClasses = {
+  blue: {
+    bg: "bg-blue-50",
+    border: "border-blue-200",
+    text: "text-blue-900",
+    accent: "blue-600",
+    button: "bg-blue-600 hover:bg-blue-700",
+  },
+  purple: {
+    bg: "bg-purple-50",
+    border: "border-purple-200",
+    text: "text-purple-900",
+    accent: "purple-600",
+    button: "bg-purple-600 hover:bg-purple-700",
+  },
+  orange: {
+    bg: "bg-orange-50",
+    border: "border-orange-200",
+    text: "text-orange-900",
+    accent: "orange-600",
+    button: "bg-orange-600 hover:bg-orange-700",
+  },
+};
